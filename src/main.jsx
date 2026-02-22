@@ -4,6 +4,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Dashboard from './Components/Dashboard.jsx'
 import RootLayout from './Layout/RootLayout.jsx'
 import "./index.css";
+import Notes from './Components/Courses/Notes.jsx'
 
 
 const router = createBrowserRouter ([
@@ -12,7 +13,8 @@ const router = createBrowserRouter ([
     element: <RootLayout />,
 
     children: [
-      {index: true, element: <Dashboard />}
+      {index: true, element: <Dashboard />},
+      {path: "Courses", element: <Notes />}
     ]
   }
 ])

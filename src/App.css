@@ -1,5 +1,5 @@
 .grid-cover{
-  min-height: 50dvh;
+  /* min-height: 50dvh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@
   box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.22);
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 890px){
 
   .grid-container {
   display: grid;

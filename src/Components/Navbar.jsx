@@ -11,6 +11,7 @@ function Navbar() {
             Qalam Academy
           </div>
         </div>
+        
     </div>
 
     

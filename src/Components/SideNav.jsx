@@ -4,7 +4,7 @@ import { PencilLine, TableCellsMerge, BookCheck, Album, MessageCircleQuestionMar
 function SideNav() {
   return (
 
-    <div className=" hidden lg:block h-screen w-64 shrink-0 bg-white px-2 shadow-lg ">
+    <div className=" hidden xl:block h-screen w-64 shrink-0 bg-white px-2 shadow-lg ">
         
         <div className="mt-32">
           <div className="p-4 mx-3  flex gap-5 text-gray-600 text-lg font-semibold
