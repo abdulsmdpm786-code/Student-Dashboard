@@ -4,14 +4,8 @@ import { PencilLine, TableCellsMerge, BookCheck, Album, MessageCircleQuestionMar
 function SideNav() {
   return (
 
-    <div className="h-screen w-64 bg-white px-2 shadow-lg">
-        <div className=" pt-5"> 
-          <div className="bg-slate-200 p-4 mx-3 flex gap-5 text-black text-lg font-semibold
-          rounded-lg cursor-default">
-            <PencilLine color="blue" />
-            Qalam Academy
-          </div>
-        </div>
+    <div className=" hidden lg:block h-screen w-64 shrink-0 bg-white px-2 shadow-lg ">
+        
         <div className="mt-32">
           <div className="p-4 mx-3  flex gap-5 text-gray-600 text-lg font-semibold
           rounded-lg cursor-default hover:bg-slate-200 hover:text-blue-800">
