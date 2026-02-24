@@ -1,5 +1,7 @@
 import React from "react";
 import "./Note.css"
+import Globe from "../../assets/icons/Globe.png";
+import Notes2 from "./Notes2";
 
 function Notes() {
   return (
@@ -14,25 +16,25 @@ function Notes() {
         >
           <ul className="flex gap-5 items-center p-2 text-center">
             <li
-              className="border-2 border-blue-800 h-8 w-14 rounded-lg text-lg font-semibold  cursor-pointer
+              className="border-2 border-blue-800 h-8 w-14 rounded-lg text-lg font-medium  cursor-pointer
            hover:bg-blue-800 hover:text-white"
             >
               All
             </li>
             <li
-              className="border-2 border-blue-800 h-8 w-28  rounded-lg text-lg font-semibold  cursor-pointer
+              className="border-2 border-blue-800 h-8 w-28  rounded-lg text-lg font-medium  cursor-pointer
            hover:bg-blue-800 hover:text-white"
             >
               JavaScript
             </li>
             <li
-              className="border-2 border-blue-800 h-8 w-20 rounded-lg text-lg font-semibold  cursor-pointer
+              className="border-2 border-blue-800 h-8 w-20 rounded-lg text-lg font-medium  cursor-pointer
            hover:bg-blue-800 hover:text-white transition"
             >
               Python
             </li>
             <li
-              className="border-2 border-blue-800 h-8 w-14 rounded-lg text-lg font-semibold  cursor-pointer
+              className="border-2 border-blue-800 h-8 w-14 rounded-lg text-lg font-medium  cursor-pointer
            hover:bg-blue-800 hover:text-white"
             >
               Java
@@ -40,10 +42,12 @@ function Notes() {
           </ul>
         </div>
       </div>
-      <div className="grid-container">
+     
+     <Notes2 />
+     
         
 
-      </div>
+      
 
 
     </div>
