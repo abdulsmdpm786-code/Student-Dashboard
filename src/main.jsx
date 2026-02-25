@@ -5,6 +5,10 @@ import Dashboard from './Components/Dashboard.jsx'
 import RootLayout from './Layout/RootLayout.jsx'
 import "./index.css";
 import Notes from './Components/Courses/Notes.jsx'
+import {Provider} from "react-redux"
+import {store} from "./Store/store.js"
+import SingleNote from './Components/Courses/SingleNote.jsx'
+
 
 
 const router = createBrowserRouter ([
@@ -14,7 +18,8 @@ const router = createBrowserRouter ([
 
     children: [
       {index: true, element: <Dashboard />},
-      {path: "Courses", element: <Notes />}
+      {path: "Courses", element: <Notes />},
+      {path: "Courses/:noteId", element: <SingleNote />}
     ]
   }
 ])
@@ -22,7 +27,10 @@ const router = createBrowserRouter ([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <Provider store={store}> 
+ <RouterProvider router={router}/>
+    </Provider>
+   
   </StrictMode>,
 )
 

@@ -5,11 +5,11 @@ import Navbar from "../Components/Navbar";
 
 function RootLayout() {
   return (
-    <div className="flex flex-col h-screen    bg-slate-300">
+    <div className="flex flex-col h-full    bg-slate-300">
       <Navbar />
-      <div className="flex flex-1 overflow-hidden">
+      <div className="xl:ml-64 flex flex-1 ">
         <SideNav />
-        <main className="flex-1 h-screen pt-10 overflow-y-auto ">
+        <main className="flex-1 h-full w-full bg-slate-300 pt-10  ">
           <Outlet />
         </main>
       </div>

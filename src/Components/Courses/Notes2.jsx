@@ -1,6 +1,7 @@
 import React from "react";
 import Book from "../../assets/icons/Bookshelf3.png";
 import MainCourse from "./MainCourse";
+import CourseNotes from "./CourseNotes";
 
 function Notes2() {
   return (
@@ -27,8 +28,10 @@ function Notes2() {
           
         </div>
       </div>
-      <div className="w-full lg:w-[69%]  mt-3  ">
+      <div className="w-full lg:w-[69%]  mt-5  ">
         <MainCourse />
+       
+
       </div>
 
       

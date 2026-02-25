@@ -2,6 +2,7 @@ import React from "react";
 import Python from "../../assets/Main Course/Python.jpg";
 import JavaScript from "../../assets/Main Course/JavaScript.png";
 import Java from "../../assets/Main Course/java.webp";
+import CourseNotes from "./CourseNotes";
 
 const courses = [
   {
@@ -22,44 +23,43 @@ const courses = [
     title: "Learn Java",
     Note: "Java is a powerful, object-oriented programming language used to build applications for computers, mobile devices, and the web. It was developed by James Gosling in 1995 at Sun Microsystems.",
   },
-  
 ];
 
 console.log(courses);
 
-
 function MainCourse() {
   return (
-    <div className="mb-14 flex gap-3 ">
-      {
-            courses.map(({id, image, title, Note})=> (
-                <div key={id} className="flex flex-col  w-96 h-96 p-2 bg-white shadow-lg rounded-lg overflow-hidden
+    <div>
+      <div className="mb-14 grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 gap-3 ">
+        {courses.map(({ id, image, title, Note }) => (
+          <div
+            key={id}
+            className="flex flex-col  w-full h-96     bg-white shadow-lg rounded-lg overflow-hidden
                  hover:-translate-y-3 transition-all  hover:shadow-2xl"
-                >
-        <div className="w-full h-1/2  bg-slate-200 ">
-          <img src={image} alt="" className="w-full h-full object-cover" />
-        </div>
-        <div className="w-full flex-1 p-5 text-center ">
-          <h1 className="font-bold text-blue-800 mb-5 text-2xl">{title}</h1>
-          <h1 className="text-black text-sm line-clamp-4">
-            {Note}
-          </h1>
-        </div>
-        <div className="flex gap-3 justify-around ">
-          <button className="py-2 rounded-lg px-2 bg-blue-800 hover:bg-blue-900 text-white font-semibold">
-            Learn More
-          </button>
-          <button className="py-2 rounded-lg px-2 bg-green-800 hover:bg-green-900 text-white font-semibold">
-            Completed
-          </button>
-        </div>
+          >
+            <div className="w-full h-1/2  bg-slate-200 ">
+              <img src={image} alt="" className="w-full h-full object-cover" />
+            </div>
+            <div className="p-3">
+              <div className="w-full flex-1 p-2 mb-2 text-center ">
+                <h1 className="font-bold text-blue-800 mb-3 text-2xl">
+                  {title}
+                </h1>
+                <h1 className="text-black  text-xs line-clamp-4">{Note}</h1>
+              </div>
+              <div className="flex gap-3 justify-around ">
+                <button className="py-2 rounded-lg px-3 bg-blue-800 hover:bg-blue-900 text-white font-semibold">
+                  Learn More
+                </button>
+                <button className="py-2 rounded-lg px-3 bg-green-800 hover:bg-green-900 text-white font-semibold">
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-
-            ))
-        }
-      
-
-      
+      <CourseNotes />
     </div>
   );
 }
