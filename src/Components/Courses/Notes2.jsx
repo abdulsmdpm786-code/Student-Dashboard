@@ -2,6 +2,7 @@ import React from "react";
 import Book from "../../assets/icons/Bookshelf3.png";
 import MainCourse from "./MainCourse";
 import CourseNotes from "./CourseNotes";
+import Timer from "./Timer";
 
 function Notes2() {
   return (
@@ -17,24 +18,23 @@ function Notes2() {
                 You've learned 80% of your goal this week. Keep it up and
                 improve your progress!
               </p>
-              
             </div>
             <div className="w-full flex justify-center sm:w-1/2 ">
               <img src={Book} alt="" className="w-72 object-contain" />
             </div>
           </div>
+          <div className=" mt-5">
+            <MainCourse />
+          </div>
         </div>
-        <div className="w-1/3 p-2 bg-stone-700 hidden lg:block">
-          
+
+        <div
+          className="w-1/3 p-2 bg-white/30 backdrop-blur-md border border-white/20 rounded-lg hidden lg:block
+        "
+        >
+          <Timer />
         </div>
       </div>
-      <div className="w-full lg:w-[69%]  mt-5  ">
-        <MainCourse />
-       
-
-      </div>
-
-      
     </div>
   );
 }

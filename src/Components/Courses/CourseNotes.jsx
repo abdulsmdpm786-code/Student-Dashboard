@@ -4,14 +4,23 @@ import {Link} from "react-router-dom"
 
 function CourseNotes() {
   const noteArray = useSelector((state) => state.notes.allNotes);
-  console.log(noteArray);
 
+  const activeCategory =useSelector((state)=> state.Note.activeCategory)
+  console.log(activeCategory);
+  
+
+  const displayNotes = activeCategory === "All"
+  ? noteArray 
+  : noteArray.filter(notes => notes.sub === activeCategory)
+  console.log(displayNotes);
+  
+  
   return (
     <div >
         <h1 className="text-3xl font-bold text-blue-800 mb-5">Notes</h1>
 <div className="grid grid-cols-1 sm:grid-cols-2 min-[830px]:grid-cols-3 gap-5">
         
-      {noteArray.map(({ id, title, document }) => (
+      {displayNotes.map(({ id, title, document }) => (
         <div key={id} className="bg-white shadow-lg h-60 w-full text-center p-3 rounded-lg flex flex-col
         hover:-translate-y-3 transition-all  hover:shadow-2xl">
           <div className="flex-1">

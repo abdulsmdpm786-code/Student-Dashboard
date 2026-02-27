@@ -1,8 +1,12 @@
+
+
 .grid-cover{
   /* min-height: 50dvh; */
   display: flex;
   align-items: center;
   justify-content: center;
+  
+
 }
 
 .grid-container {
@@ -42,7 +46,8 @@
   .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-rows: auto;
   gap: 1rem;
   grid-template-areas: 
   "box-1 box-1 "

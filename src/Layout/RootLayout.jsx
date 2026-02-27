@@ -9,7 +9,7 @@ function RootLayout() {
       <Navbar />
       <div className="xl:ml-64 flex flex-1 ">
         <SideNav />
-        <main className="flex-1 h-full w-full bg-slate-300 pt-10  ">
+        <main className="flex-1 h-full w-full  pt-10  ">
           <Outlet />
         </main>
       </div>

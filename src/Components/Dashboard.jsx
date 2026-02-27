@@ -49,11 +49,11 @@ const handleReset = ()=> {
 // console.log(counter);
 
   return (
-    <div className="grid-cover">
-      <div className="grid-container">
+    <div className="grid-cover ">
+      <div className="grid-container ">
         <div
           className="flex   justify-around items-center p-8 md:p-0 bg-blue-800 rounded-2xl shadow-sm border
- border-slate-100 hover:shadow-md transition-shadow h-full text-white"
+ border-slate-100 hover:shadow-md transition-shadow h-full  text-white"
           style={{ gridArea: "box-1" }}
         >
           <div>
@@ -76,25 +76,29 @@ const handleReset = ()=> {
           </div>
         </div>
         <div
-          className="box text-center max-[890px]:bg-pink-200"
+          // className="box text-center max-[890px]:bg-pink-200"
+          // style={{ gridArea: "box-2" }}
+          className="flex  flex-col justify-between p-3 bg-pink-200 rounded-2xl shadow-sm border
+ border-slate-100 hover:shadow-md transition-shadow h-full"
           style={{ gridArea: "box-2" }}
         >
           <div className="bg-pink-200  w-full lg:h-1/2 flex justify-center items-center">
             <img
               src={Globe}
               alt=""
-              className=" max-[890px]:w-10  max-[890px]:h-10 lg:h-full"
+              className=" max-[890px]:w-10  max-[890px]:h-10 w-32 h-32 object-contain mx-auto"
             />
           </div>
           <div className="p-3">
-            <h2 className="text-base text-blue-800 font-bold mb-4 ">
+            <h2 className="text-base text-center text-blue-800 font-bold mb-4 ">
               Build Your Legacy, One Lesson at a Time.
             </h2>
             <p className="text-black text-xs leading-relaxed max-w-lg max-[890px]:hidden">
               Knowledge is the only treasure that increases when shared. Keep
               pushing the world needs what you are building.
             </p>
-            <button className=" sm:mt-4  2xl:mt-6 bg-blue-800 text-[11px] w-full sm:text-xs 2xl:text-base text-white font-normal sm:font-semibold  py-2 px-6 rounded-lg w-fit hover:bg-blue-900 transition-colors">
+            <button className=" sm:mt-4  2xl:mt-6 bg-blue-800 text-[11px] 
+             w-full sm:text-xs 2xl:text-base text-white font-normal sm:font-semibold  py-2 px-6 rounded-lg  hover:bg-blue-900 transition-colors">
               Continue Learning
             </button>
           </div>
@@ -209,7 +213,7 @@ const handleReset = ()=> {
           </h2>
           <h1 className="text-blue-800 text-xl font-bold ">{counter}</h1>
           <p>Message</p>
-          <div className="flex gap-5 mt-1">
+          <div className="flex flex-wrap gap-5 mt-1">
            
             <button 
             onClick={handleStart}
