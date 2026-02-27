@@ -9,9 +9,10 @@ function Notes2() {
     <div>
       <div className="flex gap-3 mt-5 ">
         <div className="w-full lg:w-4/5 ">
-          <div className="flex flex-col-reverse sm:flex-row gap-4 p-8 bg-gradient-to-r from-blue-700 to-indigo-800 rounded-xl ">
+          <div className="flex flex-col-reverse sm:flex-row gap-4 p-8 
+          bg-gradient-to-r from-blue-700 to-indigo-800 rounded-xl ">
             <div className="max-w-lg  flex flex-col justify-center">
-              <h1 className="text-2xl  text-white md:text-4xl font-bold mb-4">
+              <h1 className="text-xl  text-white md:text-4xl font-bold mb-4">
                 Welcome back, Abdul Samad!
               </h1>
               <p className="text-indigo-100 text-sm md:text-base leading-relaxed mb-3">

@@ -8,6 +8,8 @@ import Notes from './Components/Courses/Notes.jsx'
 import {Provider} from "react-redux"
 import {store} from "./Store/store.js"
 import SingleNote from './Components/Courses/SingleNote.jsx'
+import QuizIntro from './Components/Quiz/QuizIntro.jsx'
+import QuizPage from './Components/Quiz/QuizPage.jsx'
 
 
 
@@ -19,7 +21,9 @@ const router = createBrowserRouter ([
     children: [
       {index: true, element: <Dashboard />},
       {path: "Courses", element: <Notes />},
-      {path: "Courses/:noteId", element: <SingleNote />}
+      {path: "Courses/:noteId", element: <SingleNote />},
+      {path: "Quiz", element: <QuizIntro />},
+      {path: "Quiz/:quizId", element: <QuizPage />}
     ]
   }
 ])

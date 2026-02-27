@@ -6,6 +6,7 @@ import Task from "../assets/icons/Todo list.png";
 import quiz from "../assets/icons/quiz.png";
 import Globe from "../assets/icons/Globe.png";
 import Medal from "../assets/icons/Handcrafted Clay Medal.png";
+import {Link} from "react-router-dom"
 
 function Dashboard() {
 
@@ -46,13 +47,12 @@ const handleReset = ()=> {
 }
 
 
-// console.log(counter);
 
   return (
     <div className="grid-cover ">
       <div className="grid-container ">
         <div
-          className="flex   justify-around items-center p-8 md:p-0 bg-blue-800 rounded-2xl shadow-sm border
+          className="flex justify-around items-center p-8 md:p-0 bg-blue-800 rounded-2xl shadow-sm border
  border-slate-100 hover:shadow-md transition-shadow h-full  text-white"
           style={{ gridArea: "box-1" }}
         >
@@ -97,10 +97,13 @@ const handleReset = ()=> {
               Knowledge is the only treasure that increases when shared. Keep
               pushing the world needs what you are building.
             </p>
+            <Link to={"/Courses"}>
             <button className=" sm:mt-4  2xl:mt-6 bg-blue-800 text-[11px] 
              w-full sm:text-xs 2xl:text-base text-white font-normal sm:font-semibold  py-2 px-6 rounded-lg  hover:bg-blue-900 transition-colors">
               Continue Learning
             </button>
+            </Link>
+            
           </div>
         </div>
 
@@ -135,11 +138,14 @@ const handleReset = ()=> {
           </div>
 
           {/* 2. BOTTOM SECTION: The Data (You will add this next) */}
+          <Link to={"Quiz"}>
           <div className="flex flex-col gap-1 text-left">
             <h1 className="font-bold text-blue-800">Quiz Section</h1>
             <h3 className="text-slate-500 font-medium text-sm">Active Tasks</h3>
             <p className="text-3xl font-bold text-slate-800">12</p>
           </div>
+          </Link>
+          
         </div>
 
         <div

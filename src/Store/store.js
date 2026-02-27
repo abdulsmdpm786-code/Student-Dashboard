@@ -5,6 +5,7 @@ import categoryUpdate from './Slice/fromSlice'
 import  javaScriptQuiz  from './Slice/quizSlice';
 import  pythonQuiz  from './Slice/pythonSlice';
 import  java  from './Slice/javaSlice';
+import  quizQuestion  from './Slice/QuizSection';
 
 export const store = configureStore({
     reducer: {
@@ -13,7 +14,9 @@ export const store = configureStore({
         // Progress: progressBar
         javaScript: javaScriptQuiz,
         python: pythonQuiz,
-        java: java
+        java: java,
+        quizzes: quizQuestion
+
 
 
 
