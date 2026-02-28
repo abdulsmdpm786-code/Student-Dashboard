@@ -3,12 +3,18 @@ import Book from "../../assets/icons/Bookshelf3.png";
 import MainCourse from "./MainCourse";
 import CourseNotes from "./CourseNotes";
 import Timer from "./Timer";
+import { useSelector } from "react-redux";
+
+
 
 function Notes2() {
+
+const toggle = useSelector((state)=> state.Menu.isTimer)
+
   return (
     <div>
-      <div className="flex gap-3 mt-5 ">
-        <div className="w-full lg:w-4/5 ">
+      <div className="flex gap-3 mt-5 relative">
+        <div className="w-full xl:w-4/5 ">
           <div className="flex flex-col-reverse sm:flex-row gap-4 p-8 
           bg-gradient-to-r from-blue-700 to-indigo-800 rounded-xl ">
             <div className="max-w-lg  flex flex-col justify-center">
@@ -30,8 +36,7 @@ function Notes2() {
         </div>
 
         <div
-          className="w-1/3 p-2 bg-white/30 backdrop-blur-md border border-white/20 rounded-lg hidden lg:block
-        "
+          className={`xl:w-1/3 p-2 bg-white/30 backdrop-blur-md border border-white/20 rounded-lg  ${toggle ? "block absolute right-0 xl:z-20  w-72 " : "hidden"} xl:block xl:static `}
         >
           <Timer />
         </div>

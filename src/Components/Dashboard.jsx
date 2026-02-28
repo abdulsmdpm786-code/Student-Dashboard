@@ -148,7 +148,9 @@ const handleReset = ()=> {
           
         </div>
 
-        <div
+
+<Link to={"/Courses"}>
+<div
           className="flex  flex-col justify-between p-3 bg-pink-200 rounded-2xl shadow-sm border
  border-slate-100 hover:shadow-md transition-shadow h-full"
           style={{ gridArea: "box-5" }}
@@ -166,6 +168,8 @@ const handleReset = ()=> {
             <p className="text-3xl font-bold text-slate-800">12</p>
           </div>
         </div>
+</Link>
+        
       
         <div
           className="flex  flex-col justify-between p-3 bg-orange-200 rounded-2xl shadow-sm border
@@ -183,7 +187,7 @@ const handleReset = ()=> {
             <h3 className="text-slate-500 font-medium text-sm">
               Victory Vault
             </h3>
-            <p className="text-sm font-semibold text-slate-800">
+            <p className="text-sm font-medium  text-slate-500">
               Success is a series of small wins played out over time. You’ve put
               in the work, faced the challenges, and come out on top
             </p>

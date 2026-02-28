@@ -47,8 +47,8 @@ function Timer() {
   }
 
   return (
-    <div className="p-3 border-4 border-white rounded-lg">
-      <div className="flex gap-1">
+    <div className="p-2 border-4 border-white rounded-lg">
+      <div className="flex justify-center gap-1">
         <button 
         onClick={handleStart}
         className="py-1 px-2 bg-blue-800 rounded-lg text-white font-semibold hover:bg-blue-900">
@@ -56,13 +56,13 @@ function Timer() {
         </button>
         <button
           onClick={shortBreak}
-          className="py-1 px-2 bg-blue-800 rounded-lg text-white font-semibold hover:bg-blue-900"
+          className="py-1 px-1 bg-blue-800 rounded-lg text-white  font-semibold hover:bg-blue-900"
         >
           Short Break
         </button>
         <button 
         onClick={longBreak}
-        className="py-1 px-2 bg-blue-800 rounded-lg text-white font-semibold hover:bg-blue-900">
+        className="py-1 px-1 bg-blue-800 rounded-lg text-white font-semibold hover:bg-blue-900">
           Long Break
         </button>
       </div>

@@ -30,7 +30,7 @@ console.log(courses);
 function MainCourse() {
   return (
     <div>
-      <div className="mb-14 grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 gap-3 ">
+      <div className="mb-14 grid grid-cols-1 sm:grid-cols-2  2xl:grid-cols-3 gap-3 ">
         {courses.map(({ id, image, title, Note }) => (
           <div
             key={id}

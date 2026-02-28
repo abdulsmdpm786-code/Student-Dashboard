@@ -6,16 +6,15 @@ import  javaScriptQuiz  from './Slice/quizSlice';
 import  pythonQuiz  from './Slice/pythonSlice';
 import  java  from './Slice/javaSlice';
 import  quizQuestion  from './Slice/QuizSection';
-
+import menuSlice from './Slice/menuSlice'
+ 
 export const store = configureStore({
     reducer: {
         notes: DataSlice,
         Note: categoryUpdate,
         // Progress: progressBar
-        javaScript: javaScriptQuiz,
-        python: pythonQuiz,
-        java: java,
-        quizzes: quizQuestion
+        quizzes: quizQuestion,
+        Menu: menuSlice
 
 
 
