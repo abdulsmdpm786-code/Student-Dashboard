@@ -14,7 +14,7 @@ function QuizIntro() {
     
 
   return (
-    <div className="bg-slate-300 h-screen p-5">
+    <div className="bg-slate-300  ">
       <div>
         <h1 className="text-4xl text-blue-800 font-bold ">Quiz Section</h1>
       </div>

@@ -23,7 +23,7 @@ function Navbar() {
         <div className=" pt-5 flex items-center ml-4"> 
           {
             toggle ? <Eye onClick={()=> handleMenu()} className="h-8 w-8 text-blue-800 xl:hidden transition" />
-            : <EyeClosed onClick={()=> handleMenu()} className="h-8 w-8 text-red-800 transition" />
+            : <EyeClosed onClick={()=> handleMenu()} className="h-8 w-8 text-red-800 xl:hidden transition" />
 
           }
           

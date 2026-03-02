@@ -5,8 +5,7 @@ import {
   BookCheck,
   Album,
   MessageCircleQuestionMark,
-  
-  Eye,
+BookA
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -59,6 +58,15 @@ function SideNav() {
           >
             <MessageCircleQuestionMark />
             Quiz
+          </div>
+        </Link>
+         <Link to={"/Dictionary"}>
+          <div
+            className="0 p-4 mx-3 mt-1 flex gap-5 text-gray-600 text-lg font-semibold
+          rounded-lg cursor-default hover:bg-slate-200 hover:text-blue-800"
+          >
+            <BookA />
+            Dictionary
           </div>
         </Link>
       </div>

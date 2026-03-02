@@ -28,7 +28,7 @@ function QuizPage() {
   if (questionIndex >= questions.length) {
     return (
       <div>
-        <div className="h-screen  bg-slate-300 p-10 flex flex-col  items-center">
+        <div className="  bg-slate-300  flex flex-col  items-center">
           <div className="p-2 bg-white rounded-lg shadow-xl ">
             <div className="p-5  rounded-lg   bg-blue-900 flex flex-col justify-center items-center gap-5">
               <h1 className="text-4xl text-white font-bold ">Quiz Complete</h1>

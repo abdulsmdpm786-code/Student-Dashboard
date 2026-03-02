@@ -10,6 +10,7 @@ import {store} from "./Store/store.js"
 import SingleNote from './Components/Courses/SingleNote.jsx'
 import QuizIntro from './Components/Quiz/QuizIntro.jsx'
 import QuizPage from './Components/Quiz/QuizPage.jsx'
+import Dictionary from './Components/Dictionary/Dictionary.jsx'
 
 
 
@@ -23,7 +24,9 @@ const router = createBrowserRouter ([
       {path: "Courses", element: <Notes />},
       {path: "Courses/:noteId", element: <SingleNote />},
       {path: "Quiz", element: <QuizIntro />},
-      {path: "Quiz/:quizId", element: <QuizPage />}
+      {path: "Quiz/:quizId", element: <QuizPage />},
+      {path: "Dictionary", element: <Dictionary />}
+
     ]
   }
 ])
