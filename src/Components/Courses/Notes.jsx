@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Note.css";
 import Globe from "../../assets/icons/Globe.png";
 import Notes2 from "./Notes2";
 import { useDispatch, useSelector } from "react-redux";
