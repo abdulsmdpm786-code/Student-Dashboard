@@ -2,9 +2,9 @@
   "name": "student-dashboard",
   "homepage": "https://abdulsmdpm786-code.github.io/Student-Dashboard",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
-  "scripts": {
+   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
