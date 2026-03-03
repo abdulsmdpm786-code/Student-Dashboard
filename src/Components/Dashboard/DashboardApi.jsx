@@ -9,7 +9,6 @@ function DashboardApi() {
     const fetchQuote = async () => {
       try {
         const res = await axios.get("https://api.adviceslip.com/advice")
-        console.log("it is",res.data.slip.advice);
         setQuote(res.data.slip.advice)
         
         

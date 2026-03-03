@@ -25,7 +25,7 @@ const courses = [
   },
 ];
 
-console.log(courses);
+
 
 function MainCourse() {
   return (

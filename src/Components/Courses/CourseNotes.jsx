@@ -6,13 +6,10 @@ function CourseNotes() {
   const noteArray = useSelector((state) => state.notes.allNotes);
 
   const activeCategory =useSelector((state)=> state.Note.activeCategory)
-  console.log(activeCategory);
-  
 
   const displayNotes = activeCategory === "All"
   ? noteArray 
   : noteArray.filter(notes => notes.sub === activeCategory)
-  console.log(displayNotes);
   
   
   return (

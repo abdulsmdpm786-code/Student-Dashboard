@@ -13,6 +13,7 @@ const initialState = {
         "https://javascript.info/types",
         "https://www.w3schools.com/js/js_variables.asp",
       ],
+      isCompleted: false,
     },
 
     {
@@ -26,6 +27,7 @@ const initialState = {
         "https://javascript.info/function-basics",
         "https://www.w3schools.com/js/js_arrow_function.asp",
       ],
+      isCompleted: false,
     },
 
     {
@@ -39,6 +41,7 @@ const initialState = {
         "https://javascript.info/async-await",
         "https://nodejs.dev/en/learn/understanding-the-nodejs-event-loop/",
       ],
+      isCompleted: false,
     },
 
     {
@@ -52,6 +55,7 @@ const initialState = {
         "https://javascript.info/dom-nodes",
         "https://www.w3schools.com/js/js_htmldom.asp",
       ],
+      isCompleted: false,
     },
 
     // ===================== PYTHON =====================
@@ -67,6 +71,7 @@ const initialState = {
         "https://realpython.com/python-data-types/",
         "https://www.w3schools.com/python/python_variables.asp",
       ],
+      isCompleted: false,
     },
 
     {
@@ -80,6 +85,7 @@ const initialState = {
         "https://realpython.com/python-lambda/",
         "https://www.w3schools.com/python/python_functions.asp",
       ],
+      isCompleted: false,
     },
 
     {
@@ -93,6 +99,7 @@ const initialState = {
         "https://realpython.com/python3-object-oriented-programming/",
         "https://www.w3schools.com/python/python_classes.asp",
       ],
+      isCompleted: false,
     },
 
     {
@@ -106,6 +113,7 @@ const initialState = {
         "https://realpython.com/python-exceptions/",
         "https://www.w3schools.com/python/python_file_handling.asp",
       ],
+      isCompleted: false,
     },
 
     // ===================== JAVA =====================
@@ -121,6 +129,7 @@ const initialState = {
         "https://www.geeksforgeeks.org/data-types-in-java/",
         "https://www.w3schools.com/java/java_variables.asp",
       ],
+      isCompleted: false,
     },
 
     {
@@ -134,6 +143,7 @@ const initialState = {
         "https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/",
         "https://www.w3schools.com/java/java_oop.asp",
       ],
+      isCompleted: false,
     },
 
     {
@@ -147,6 +157,7 @@ const initialState = {
         "https://www.geeksforgeeks.org/exceptions-in-java/",
         "https://www.w3schools.com/java/java_try_catch.asp",
       ],
+      isCompleted: false,
     },
 
     {
@@ -160,13 +171,25 @@ const initialState = {
         "https://www.geeksforgeeks.org/collections-in-java-2/",
         "https://www.w3schools.com/java/java_arraylist.asp",
       ],
+      isCompleted: false,
     },
   ],
 };
-export const DataSlice = createSlice({
+ const DataSlice = createSlice({
   name: "notes",
   initialState,
-  reducers: {},
+  reducers: {
+    toggleComplete: (state, action)=>{
+      const noteId = action.payload
+      const noteArray = state.allNotes.find(note => note.id === noteId)
+      
+      
+      if (noteArray) {
+    noteArray.isCompleted = !noteArray.isCompleted;
+  }
+      
+    }
+  },
 });
-
+export const {toggleComplete} = DataSlice.actions
 export default DataSlice.reducer;

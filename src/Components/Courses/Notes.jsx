@@ -21,7 +21,6 @@ function Notes() {
     setIsToggle(!isToggle);
   }
 
-
   function handleTimer() {
     dispatch(toggleTimer());
     setIsTimer(!isTimer);

@@ -14,7 +14,6 @@ import { useSelector } from "react-redux";
 function SideNav() {
 
   const toggle = useSelector((state)=> state.Menu.isMenu)
-  console.log(toggle);
   
 
   return (
