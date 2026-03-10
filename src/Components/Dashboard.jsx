@@ -9,6 +9,7 @@ import Medal from "../assets/icons/Handcrafted Clay Medal.png";
 import { Link } from "react-router-dom";
 import DashboardApi from "./Dashboard/DashboardApi";
 import DashboardApi2 from "./Dashboard/DashboardApi2";
+import DashBoardDate from "./Dashboard/DashBoardDate";
 
 function Dashboard() {
   const [counter, setCounter] = useState(0);
@@ -53,12 +54,15 @@ function Dashboard() {
           style={{ gridArea: "box-1" }}
         >
           <div className="md:w-1/2">
-            <h1 className="text-sm font-thin">21-02-2026</h1>
+            
+              
+              <DashBoardDate />
+            
             <h1 className="text-lg 2xl:text-3xl lg:text-xl font-bold">
               Welcome Abdul Samad PM
             </h1>
 
-            <DashboardApi2 />
+            {<DashboardApi2 /> ? <DashboardApi2 /> : "Loading..."}
           </div>
 
           <div className="overflow-hidden">
