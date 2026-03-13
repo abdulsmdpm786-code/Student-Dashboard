@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./Components/Dashboard.jsx";
 import RootLayout from "./Layout/RootLayout.jsx";
 import "./index.css";
@@ -12,7 +12,7 @@ import QuizIntro from "./Components/Quiz/QuizIntro.jsx";
 import QuizPage from "./Components/Quiz/QuizPage.jsx";
 import Dictionary from "./Components/Dictionary/Dictionary.jsx";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       path: "/",
@@ -28,9 +28,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  {
-    basename: "/Student-Dashboard",
-  },
+  
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(

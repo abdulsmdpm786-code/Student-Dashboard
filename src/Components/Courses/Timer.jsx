@@ -48,7 +48,7 @@ function Timer() {
 
   return (
     <div className="p-2 border-4 border-white rounded-lg">
-      <div className="flex justify-center gap-1">
+      <div className="flex justify-between gap-1">
         <button 
         onClick={handleStart}
         className="py-1 px-2 bg-blue-800 rounded-lg text-white font-semibold hover:bg-blue-900">

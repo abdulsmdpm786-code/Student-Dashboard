@@ -46,7 +46,9 @@ function Dashboard() {
   };
 
   return (
-    <div className="grid-cover h-full bg-slate-300 ">
+
+    
+    <div className="grid-cover  h-full bg-slate-300 ">
       <div className="grid-container ">
         <div
           className="flex justify-around items-center p-8 md:p-0 bg-blue-800 rounded-2xl shadow-sm border

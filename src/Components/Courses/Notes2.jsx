@@ -37,7 +37,7 @@ const toggle = useSelector((state)=> state.Menu.isTimer)
         </div>
 
         <div
-          className={`xl:w-1/3 p-2 bg-white/30 backdrop-blur-md border border-white/20 rounded-lg  ${toggle ? "block absolute right-0 xl:z-20  w-72 " : "hidden"} xl:block xl:static `}
+          className={`xl:w-1/3 p-2 bg-white/30 backdrop-blur-md border border-white/20 rounded-lg  ${toggle ? "block absolute right-0  xl:z-20  w-72 " : "hidden"} xl:block xl:static `}
         >
           <Timer />
           <ProgressTrack />

@@ -14,7 +14,7 @@ function Navbar() {
   }
 
   return (
-    <div className="bg-white shrink-0 h-20 sticky top-0  z-50">
+    <div className="bg-white shrink-0 h-20 w-full fixed top-0   z-50">
       <div className=" pt-5 flex items-center ml-4">
         {toggle ? (
           <Eye
