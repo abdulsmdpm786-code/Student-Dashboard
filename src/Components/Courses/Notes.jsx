@@ -26,7 +26,7 @@ function Notes() {
   }
 
   return (
-    <div className="  bg-slate-300 mt-20">
+    <div className="  bg-slate-300 ">
       <div className="flex justify-between sticky items-start top-24 z-10">
         <div className="bg-white/30 backdrop-blur-md border  border-white/20 p-2 rounded-lg">
           <h1 className="text-2xl font-bold  text-blue-800">My courses</h1>

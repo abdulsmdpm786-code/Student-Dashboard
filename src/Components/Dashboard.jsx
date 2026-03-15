@@ -84,7 +84,7 @@ function Dashboard() {
             <img
               src={Globe}
               alt=""
-              className=" max-[890px]:w-10  max-[890px]:h-10 w-32 h-32 object-contain mx-auto"
+              className=" max-[890px]:w-10  max-[890px]:h-10 w-32 h-32 object-contain mx-auto "
             />
           </div>
           <div className="p-3">

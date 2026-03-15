@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   PencilLine,
   TableCellsMerge,
@@ -8,16 +8,31 @@ import {
 BookA
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 
 function SideNav() {
 
   const toggle = useSelector((state)=> state.Menu.isMenu)
-  
+  const [menu, setMenu] = useState(true);
+
+  const dispatch = useDispatch();
+
+  function handleMenu() {
+    dispatch(toggleMenu());
+    setMenu(!toggle);
+  }
 
   return (
-    <div className={`   ${toggle ? "block" : "hidden"} xl:block h-screen fixed top-0 left-0 w-64 shrink-0 bg-white px-2 shadow-lg z-30`}>
+    <>
+    {/* {menu && (
+    <div 
+      className="fixed inset-0 bg-black/40 z-20 xl:hidden animate-fade-in" 
+      onClick={() => handleMenu()} 
+    />
+  )} */}
+
+    <div className={`   ${toggle ? "translate-x-0" : "-translate-x-full"} xl:translate-x-0 transition-transform duration-300 ease-in-out h-screen fixed top-0 left-0 w-64 shrink-0 bg-white px-2 shadow-lg z-30`}>
       <div className="mt-32">
         <Link to={"/"}>
           <div
@@ -70,6 +85,7 @@ function SideNav() {
         </Link>
       </div>
     </div>
+    </>
   );
 }
 
